@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Travel reservation form</h1>
+        <h3>* denotes mandatory</h3>
+        <form>
+            <label>Full name*:</label>
+            <br>
+            <input type="text" placeholder="FirstName LastName" required>
+            <br>
+            <label>Email address*:</label>
+            <br>
+            <input type="address" placeholder="EMAIL_ADDRESS" required>
+            <br>
+            <label>Select Tour Package*:</label>
+            <br>
+            <select name="tour" style="background-color:lightgrey;" required>
+                <option value="goa">Goa</option>
+                <option value="bali">Bali</option>
+                <option value="turkey">Turkey</option>
+                <option value="malta">Malta</option>
+            </select>
+            <br>
+            <label>Arrival date*:</label>
+            <br>
+            <input type="date" value="m/d/y" required> 
+            <!--Doar cu JS am gasit ca pot schimba din forma d/m/y in m/d/y-->
+            <br>
+            <label>Number of persons*:</label>
+            <br>
+            <input type="number" placeholder="UNKNOWN_TYPE" min="1" required>
+            <br>
+            <label>What would you want to avail?*</label>
+            <br>
+            <span>Boarding</span>
+            <input type="checkbox" value="boarding" >
+            <br>
+            <span>Fooding</span>
+            <input type="checkbox" value="fooding" >
+            <br>
+            <span>Sight seeing</span>
+            <input type="checkbox" value="sightseeing">
+            <br>
+            <label>Discount Coupon code:</label>
+            <br>
+            <input type="text" placeholder="UNKNOWN_TYPE">
+            <br>
+            <label>Terms and conditions*</label>
+            <br>
+            <input type="radio" value="agree" required checked>I agree
+            <input type="radio" value="disagree">I disagree
+            <br>
+            <input type="submit" value="Complete reservation">
+        </form>
+    </body>
+</html>

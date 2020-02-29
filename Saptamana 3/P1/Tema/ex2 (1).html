@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="ex2.css">
+  </head>
+  <body>
+    <form>
+      <label>Nume</label>
+      <input class="input" type="text" value="Ion" required>
+      <br>
+      <label id="prenume">Prenume</label>
+      <input id="prenume1" class="input" type="text" value="Popescu" required>
+      <br>
+      <label id="sex">Sex<label>
+      <input class="radio" type="radio" name="sex" value="male">
+      <label id="male" for="male">Masculin</label>
+      <input class="radio" type="radio" name="sex" value="male">
+      <label id="female" for="female">Feminin</label>
+      <br>
+      <label id="age" for="age">Varsta</label>
+      <input id="age1" class="input" type="number" name="age" min="18" max="85">
+      <br>
+      <label id="tara">Tara</label>
+      <input id="tara1" class="input" type="text">
+      <br>
+      <label id="oras">Oras</label>
+      <input id="oras1" class="input" type="text">
+      <br>
+      <label id="adresa">Adresa</label>
+      <input id="adresa1" class="input" type="text" name="adress">
+      <br>
+      <label id="email">E-mail</label>
+      <input id="email" class="input" type="email" value="example@gmail.com" required>
+      <br>
+      <br>
+      <textarea name="mesaj" rows="5" cols="50" form="usrform">Lasati un mesaj...
+      </textarea>
+      <br>
+      <input type="submit" name="submit">
+      <button onclick="button">Resetare</button>
+    </form>
+  </body>
+</html>

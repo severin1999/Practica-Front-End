@@ -1,0 +1,135 @@
+body {
+    background: url("background.png") no-repeat left top ;
+    background-color: lightgreen;
+}
+
+form {
+    margin-left: 430px;
+}
+
+label {
+    color: blue;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#male , #female {
+    display: flex ;
+    flex-direction: row ;
+    position: relative;
+    margin-left: 70px;
+    bottom: 25px;
+    color: brown;
+}
+
+input[type="text"] , input[type="number"] , input[type="email"] {
+    display: ruby;
+    padding-left: 40px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+input[type="submit"] , button {
+    background-color: burlywood ;
+    color: darkblue;
+    position: relative;
+    left:100px;
+    bottom: 420px ;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover , button:hover {
+    background-color: mediumspringgreen;
+    color:darkred ;
+    font-size: 25px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 50px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    border-width: 5px;
+    border-color: firebrick;
+}
+
+#prenume {
+    position: relative ;
+    left: 250px ;
+    bottom: 80px ;
+}
+
+#prenume1 {
+    position: relative ;
+    left: 280px ;
+    bottom: 80px ;
+}
+
+#sex {
+    position: relative ;
+    bottom: 80px ;
+}
+
+#age {
+    position: relative ;
+    left: 250px ;
+    bottom: 150px ;
+}
+
+#age1 {
+    position: relative ;
+    left: 280px ;
+    bottom: 150px ;
+}
+
+#tara {
+    position: relative ;
+    bottom: 140px ;
+}
+
+#tara1 {
+    position: relative ;
+    bottom: 140px ;
+}
+
+#oras {
+    position: relative ;
+    left: 250px ;
+    bottom: 230px ;
+}
+
+#oras1 {
+    position: relative ;
+    left: 280px ;
+    bottom: 230px ;
+}
+
+#adresa {
+    position: relative ;
+    bottom: 230px ;
+}
+
+#adresa1 {
+    position: relative ;
+    bottom: 220px ;
+}
+
+#email {
+    position: relative ;
+    left: 280px ;
+    bottom: 310px ;
+}
+
+textarea {
+    position: relative ;
+    right: 400px ;
+    bottom: 350px ;
+}

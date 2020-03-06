@@ -1,0 +1,21 @@
+.container {
+    position: cover;
+}
+
+nav {
+    float: left ;
+    display: block;
+    color: darkorchid;
+}
+.section1, .section2, .section3 {
+     display: flex;
+     flex-direction: column;
+}
+
+.section2 {
+    background-color:lightgray;
+}
+
+footer {
+     text-align: center;
+ }

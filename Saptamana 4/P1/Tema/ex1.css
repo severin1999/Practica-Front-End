@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2% ;
+    background-color: black;
+    height: 625px;
+    width:100%;
+    text-align: center;
+}
+
+.sectionA, .sectionB, .sectionE, .sectionF  {
+    background-color: white;
+}
+
+.sectionC {
+    background-color: red;
+}
+
+.sectionD {
+    background-color: blue;
+}
+.sectionG {
+    background-color: yellow;
+}

@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    gap: 2% ;
+    column-gap: 1%;
+    background-color: black;
+    height: 625px;
+    text-align: center;
+}
+
+.sectionA, .sectionB, .sectionE, .sectionF  {
+    background-color: white;
+}
+
+.sectionA {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3; 
+}
+
+.sectionB {
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.sectionC {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 11;
+}
+
+.sectionD {
+    background-color: blue;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.sectionE {
+    grid-row-start: 8;
+    grid-row-end: 11;
+    grid-column-start: 3;
+    grid-column-end: 10;
+}
+
+.sectionF {
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+
+.sectionG {
+    background-color: yellow;
+}

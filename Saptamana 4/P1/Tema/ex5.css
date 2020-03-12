@@ -1,0 +1,76 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap : 2% ;
+    column-gap: 1%;
+
+}
+
+.smarandbox {
+    background-color: mediumaquamarine;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 30px;
+}
+
+.yellowbox {
+    background-color: yellow;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 30px;
+}
+
+.redbox {
+    background-color: red;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-left: 30px;
+}
+
+.bluebox {
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-left: 30px;
+}
+
+.greenbox {
+    background-color: green;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-left: 30px;
+}
+
+#image {
+    width: 320px;
+    height: 240px;
+    background-color: lightgrey; 
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+p, h2 {
+    color: #ffffff;
+}
+
+.yellowbox > p, .yellowbox > h2 {
+    color: #000000;
+}
+
+#image p {
+    padding-top: 100px;
+    margin-left: 120px;
+    font-size: 30px;
+}

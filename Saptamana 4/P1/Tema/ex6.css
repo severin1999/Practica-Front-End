@@ -1,0 +1,129 @@
+body {
+    background: #4DA0B0;
+    background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  
+    background: linear-gradient(-45deg, #D39D38, #4DA0B0); 
+    background-size: 400% 400%;
+    animation: efect 2s ease infinite;
+    margin: 0;
+}
+
+@-webkit-keyframes efect {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    border: 2px black;
+    border-style: hidden hidden solid hidden;
+}
+
+.navbar :first-child {
+    background-color: rgba(255,160,122,0.4);
+}
+
+.navbar > a {
+    flex-grow: 2;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-family: cursive ;
+}
+
+.navbar a:hover {
+    background-color: rgba(240,255,240,0.4);
+    font-size: 25px;
+}
+
+.part1, .part2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.part1 div:first-child {
+    width: 350px;
+    height: 230px;
+    background: url("unnamed.jpg") no-repeat; 
+    background-size: 350px 230px;
+    margin: 13px;
+}
+
+.part1 div:last-child{
+    width: 350px;
+    height: 230px;
+    background: url("meal.jpg") no-repeat;
+    background-size: 350px 230px;
+    margin: 13px;
+
+}
+
+.part2 div:first-child{
+    width: 350px;
+    height: 230px;
+    background: url("limonada.jpg") no-repeat;
+    background-size: 350px 230px;
+    margin: 13px;
+
+}
+
+.part2 div:last-child {
+    width: 350px;
+    height: 230px;
+    background: url("dessert.jpg") no-repeat;
+    background-size: 350px 230px;
+    margin: 13px;
+
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    color: #ffffff;
+    position: relative;
+    top: 188px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+#spanbetween {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+span {
+    border: 2px;
+    padding: 10px;
+    border-style: solid hidden solid hidden;
+    border-radius: 30%;
+}
+
+span:hover {
+    transition: ease-out 0.3s ;
+    border: 4px;
+    border-style: hidden solid hidden solid;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 750px) {
+    .part1 ,.part2 {
+        flex-direction: column;
+    }
+    .part1 div, .part2 div {
+        margin:  auto !important; /*stiu ca nu e good practice dar in caz contrar trebuia sa schimb extrem de multe*/
+        padding-bottom: 20px;
+    }
+}

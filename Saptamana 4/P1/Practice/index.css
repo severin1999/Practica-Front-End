@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-color:blue;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-sidebar {
+    background-color: rgba(230, 102, 31, 0.8);
+}
+
+#main-content {
+    background-color: rgba(20, 202, 231, 0.8);
+    flex: 1;
+}
+
+#right-sidebar {
+    background-color: rgba(20, 102, 41, 0.8);
+}
+
+footer {
+    background-color: blue;
+}

@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e01010;
+  color: #ffffff;
+}
+
+header {
+  height: 65vh;
+  background: #000 url("background-header.jpg") no-repeat;
+  background-size: cover;
+}
+
+header .top_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top_part p {
+  font-size: 7px;
+  padding-top: 10px;
+}
+
+header .top_part h2 {
+  position: relative;
+  padding-top: 10px;
+}
+
+header .top_part #phone_image {
+  width: 30px;
+}
+
+header .top_part #icons {
+  position: relative;
+  padding-top: 10px;
+}
+
+header .bottom_part {
+  padding-left: 50%;
+  margin-top: 90px;
+}
+
+header .bottom_part h2 {
+  position: relative;
+  bottom: 45px;
+}
+
+header .bottom_part #apple_button {
+  width: 145px;
+}
+
+header .bottom_part p {
+  display: inline-block;
+  width: 300px;
+}
+
+section {
+  height: 30vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+section p {
+  display: inline-block;
+  width: 175px;
+  font-size: 12px;
+}
+
+section i {
+  border: 1px solid;
+  border-radius: 100%;
+  padding: 10px;
+  background: #e01010;
+}
+
+section h3 {
+  color: lightgrey;
+}
+
+.paragraph_title {
+  height: 10vh;
+  font-size: 20px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paragraph_title p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.first_article {
+  background-color: #1a0c29;
+}
+
+.first_article h1 {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.second_article {
+  background-color: #0a0114;
+}
+
+.second_article .article_flex {
+  padding-top: 30px;
+}
+
+.third_article {
+  background-color: #1a0c29;
+}
+
+.third_article .article_flex {
+  padding-top: 30px;
+}
+
+.first_article .article_flex, .second_article .article_flex, .third_article .article_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+}
+
+.first_article .article_flex i, .second_article .article_flex i, .third_article .article_flex i {
+  background: red;
+  padding: 5px;
+  position: relative;
+  right: 15%;
+}
+
+.first_article .article_flex h3, .second_article .article_flex h3, .third_article .article_flex h3 {
+  display: inline;
+  position: relative;
+  right: 12%;
+}
+
+.first_article .article_flex p, .second_article .article_flex p, .third_article .article_flex p {
+  width: 250px;
+}
+
+.first_article .article_flex .div_img, .second_article .article_flex .div_img, .third_article .article_flex .div_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.first_article .iphone_img, .second_article .iphone_img, .third_article .iphone_img {
+  width: 180px;
+}
+
+.form h2 {
+  width: 127px;
+  margin: auto;
+  padding: 38px 0px;
+}
+
+.form form {
+  width: 450px;
+  margin: auto;
+}
+
+.form form input {
+  width: 450px;
+  height: 30px;
+  margin-bottom: 25px;
+}
+
+.form form #message {
+  height: 100px;
+}
+
+.form form #submit {
+  width: 64px;
+  background: #9c2323;
+  border: none;
+  color: white;
+  opacity: 0.7;
+}
+
+footer {
+  background-color: white;
+  height: 30px;
+  color: #91242d;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (max-width: 950px) {
+  header .color_overlay {
+    width: 100%;
+    height: 65vh;
+    background: red;
+    opacity: 0.7;
+    position: absolute;
+  }
+  header .top_part, header .bottom_part {
+    position: relative;
+  }
+  header .top_part #phone_image {
+    width: 45px;
+  }
+  header .top_part p {
+    font-size: 10px;
+  }
+  header .bottom_part {
+    padding-left: 0;
+    text-align: center;
+  }
+  header .bottom_part p {
+    width: 500px;
+  }
+  section {
+    height: auto;
+    display: block;
+    padding: 30px 0;
+    margin-top: 0;
+  }
+  section p {
+    width: 250px;
+  }
+  section :nth-child(2) {
+    padding: 15px 0;
+  }
+  .paragraph_title p {
+    width: 220px;
+  }
+  .first_article .article_flex, .third_article .article_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .first_article .article_flex i, .third_article .article_flex i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15px;
+    margin: auto;
+    right: 0;
+  }
+  .first_article .article_flex h3, .third_article .article_flex h3 {
+    left: 30%;
+  }
+  .first_article .article_flex p, .third_article .article_flex p {
+    width: 100%;
+  }
+  .second_article .article_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .second_article .article_flex i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15px;
+    margin: auto;
+    left: 0;
+  }
+  .second_article .article_flex h3 {
+    left: 30%;
+  }
+  .second_article .article_flex p {
+    width: 100%;
+  }
+  .div_img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header .bottom_part p {
+    display: none;
+  }
+  .paragraph_title {
+    height: 20vh;
+  }
+  .paragraph_title p {
+    width: 110px;
+  }
+  .first_article h1 {
+    padding-bottom: 30px;
+  }
+  .form form {
+    width: 300px;
+    margin: auto;
+  }
+  .form form input {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

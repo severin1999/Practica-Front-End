@@ -75,44 +75,63 @@ var cars = function (the_car) {
 }
 
 
-// function cars (the_car) {
-//     var country ;
-//     function romania () {
-//         return country = "romania"
-//     }
-//     function italy () {
-//         return country = "italy"
-//     }
-//     function germany () {
-//         return country = "germany"
-//     }
-//     function france () {
-//         return country = "france"
-//     }
-//     function japan () {
-//         return country = "japan"
-//     }
-//     var cars_list = {
-//         "dacia" : romania,
-//         "lamborghini": italy,
-//         "ferrari": italy,
-//         "alfa romeo": italy,
-//         "fiat": italy,
-//         "maserati": italy,
-//         "bmw": germany,
-//         "mercedes-benz": germany,
-//         "audi": germany,
-//         "porsche": germany,
-//         "volkswagen": germany,
-//         "opel": germany,
-//         "renault": france,
-//         "peugeot": france,
-//         "citroen": france,
-//         "toyota": japan,
-//         "nissan": japan,
-//         "honda": japan
+function cars (the_car) {
+    var country ;
+    function romania () {
+        return country = "romania"
+    }
+    function italy () {
+        return country = "italy"
+    }
+    function germany () {
+        return country = "germany"
+    }
+    function france () {
+        return country = "france"
+    }
+    function japan () {
+        return country = "japan"
+    }
+    var cars_list = {
+        "dacia" : romania,
+        "lamborghini": italy,
+        "ferrari": italy,
+        "alfa romeo": italy,
+        "fiat": italy,
+        "maserati": italy,
+        "bmw": germany,
+        "mercedes-benz": germany,
+        "audi": germany,
+        "porsche": germany,
+        "volkswagen": germany,
+        "opel": germany,
+        "renault": france,
+        "peugeot": france,
+        "citroen": france,
+        "toyota": japan,
+        "nissan": japan,
+        "honda": japan
 
-//     } ;
-//     return cars_list[the_car]()
-// }
+    } ;
+    if (!(the_car in cars_list)) {return "Marca necunoscuta"}
+    else {return "Marca " + the_car + " se produce in " + cars_list[the_car]()}
+}
+
+
+function cars (the_car) {
+    var country ;
+    var italy = ["lamborghini", "ferrari", "alfa romeo", "fiat", "maserati"] ;
+    var germany = ["bmw", "mercedes-benz", "audi", "porsche", "volkswagen", "opel"] ;
+    var france = ["renault", "peugeot", "citroen"] ;
+    var japan = ["toyota", "nissan", "honda"]
+    if (the_car == "dacia") {country = "romania"}
+    else if(italy.indexOf(the_car) > -1) {country = "italy"}
+    else if(germany.indexOf(the_car) > -1) {country = "germany"}
+    else if(france.indexOf(the_car) > -1) {country = "france"}
+    else if(japan.indexOf(the_car) > -1) {country = "japan"}
+    else {return "Marca necunoscuta"} ;
+    return "Marca " + the_car + " se produce in " + country
+  }
+
+
 

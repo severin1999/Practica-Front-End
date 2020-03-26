@@ -80,7 +80,7 @@ let homeTown = {
     }
 } ;
 var keyPlace = Object.keys(homeTown["place"]) ;
-var result = JSON.stringify(homeTown["place"] + ).concat(" apartine obiectului place") ;
+var result = JSON.stringify(homeTown["place"]).concat(" apartine obiectului place") ;
 
 
 //Ex6

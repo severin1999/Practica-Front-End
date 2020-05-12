@@ -1,0 +1,41 @@
+.container {
+  width: 370px;
+  position: relative;
+  left: 35%;
+}
+
+.container input[type=text], .container input[type=number], .container input[type=email] {
+  height: 25px;
+  width: 370px;
+  background-color: lightgray;
+}
+
+.container label {
+  font-size: 15px;
+}
+
+.container button {
+  width: 370px;
+  background-color: black;
+  height: 35px;
+  color: white;
+}
+
+.container .error {
+  margin: 10px 0;
+  border: 1px solid red;
+  padding: 10px;
+  background: mistyrose;
+  font-size: 17px;
+  display: none;
+}
+
+.container #button {
+  padding: 10px;
+  text-align: center;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+/*# sourceMappingURL=index.css.map */

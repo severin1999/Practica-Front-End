@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div>
+                <label>USERNAME:</label><br>
+                <div class="error" id="error_username">Please enter a valid username</div>
+                <input id="username" type="text">
+                <span>(Must be at least 4 charachters, letters and numbers only.)</span>
+            </div><br>
+            <div>
+                <label>EMAIL ADDRESS:</label><br>
+                <div class="error" id="error_email">Please enter a valid email</div>
+                <input type="email" id="email">
+                <span>We send your registration email to this address.</br>(Double-check your email address before continuing.)</span>
+            </div><br>
+            <div>
+                <label>FIRST NAME:</label><br>
+                <div class="error" id="error_fname">Please enter a first Name</div>
+                <input type="text" id="fName">
+                <span>(Must be input.)</span>
+            </div><br>
+            <div>
+                <label>LAST NAME:</label><br>
+                <div class="error" id="error_lname">Please enter a last name</div>
+                <input type="text" id="lName">
+                <span>(Must be input.)</span>
+            </div><br>
+            <div>
+                <label>NICKNAME:</label>
+                <input type="text">
+            </div><br>
+            <div>
+                <label>PHONE:</label><br>
+                <div class="error" id="error_phone">Please enter a phone</div>
+                <input type="number" id="phone">
+                <span>(Must be at least 10 charachters, numbers only)</span>
+            </div><br>
+            <div class="notification">
+                <span><label>GIMME A SITE!</label></span>
+                <input type="checkbox"><br>
+                <span><label>JUST A USERNAME, PLEASE</label></span>
+                <input type="checkbox">
+            </div><br>
+            <div id="button">
+                NEXT
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
